@@ -1,5 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgba(101, 180, 245, 0.979)   
+}
+
+.logo img{
+    height: 60px;   
+}
+
+
+.navbar{ /*SE APLICA EL NVBAR USANDO FLEX BOX PORQUE EL UL ES UN BLOCK ELEMENT, OCUPA TODA UNA LINEA*/
+    
+    display: flex;
+    flex-flow: row wrap; /*PARA DISE;O RESPONSIVE SE AJUSTA PARA NO TENER QUE ACTIVAR EL SCROLL BAR*/
+    
+
+}
+
+nav li{
+    list-style: none;
+    
+}
+
+.iconsize{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+.navbar  a{
+    display: inline-block; /*PERMITE AJUSTAR A LA ANCHURA DE LOS DEMAS COMPONENTE*/
+    padding: 25px;
+    margin: 0 25px;
+    color: rgb(236, 236, 250);
+    text-decoration: none;
+    align-items: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(14, 114, 180);
+    font-weight: 700;
+}
+
+
+
+
+
 .flex-container{
     display: flex; /*LINEA DE CODIGO CONVIERTE AL DIV EN UN FLEX CONTAINER*/
     /*FLEX-DIRECTION POR DEFECTO ES ROW*/
     /*IMPORTANTE FLEXBOX TRABAJA EN UNA DIMENSION FILA O COLUMNA*/
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
 }

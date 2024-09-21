@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Flexbox</title>
 </head>
 <body>
+    <header> <!--ESTA ES LA BARRA DE NAVACACION -->
+       
+        <div class="logo"><!--ESTE DIV SE UBICA EN FORMA DE FILA, YA QUE EL HEADER TIENE DISPLAY FLEX -->
+            <img src="/img/ExellenceLog.png" alt="Excellence Global">
+        </div>
+       
+        <nav>
+            <ul class="navbar">
+                <li><a href="#"><span class="iconsize"><i class="fa fa-home"></i></span>Inicio</a></li>
+                <li><a href="#"><span class="iconsize"><i class="fa fa-newspaper-o"></i></span>Mision</a>
+                <li><a href="#"><span class="iconsize"><i class="fa fa-line-chart"></i></span>Vision</a></li>
+                <li><a href="#"><span class="iconsize"><i class="fa fa-user"></i></span>Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+   
+
     <div class="flex-container">
         <div>
             <h1>Item 1</h1>
@@ -28,7 +48,7 @@
         </div>
     </div>
 
-
+   
 
     
 </body>
