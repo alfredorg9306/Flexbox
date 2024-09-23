@@ -5,11 +5,30 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body{
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;/*DIVIDE TODO EL WEBSITE EN 3 SECCIONES, 
+    CON EL HEIGHT 15 NOS ASEGURAMOS DEL CRECIMENTO DE LA WEBPAGE, ASEGURADO SCROLL VERTICAL
+    SI EFECTAR DISE;O RESPONSIVE.*/
+}
+
 header{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgba(101, 180, 245, 0.979)   
+    background-color: rgb(253, 252, 249)   
+}
+
+main{
+    background-color: rgb(242, 248, 248);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(1fr,1fr,1fr);
+    
+    background-color: #242440
 }
 
 .logo img{
@@ -21,13 +40,11 @@ header{
     
     display: flex;
     flex-flow: row wrap; /*PARA DISE;O RESPONSIVE SE AJUSTA PARA NO TENER QUE ACTIVAR EL SCROLL BAR*/
-    
 
 }
 
 nav li{
-    list-style: none;
-    
+    list-style: none;    
 }
 
 .iconsize{
@@ -38,17 +55,15 @@ nav li{
     display: inline-block; /*PERMITE AJUSTAR A LA ANCHURA DE LOS DEMAS COMPONENTE*/
     padding: 25px;
     margin: 0 25px;
-    color: rgb(236, 236, 250);
+    color: rgb(93, 93, 245);
     text-decoration: none;
     align-items: center;
 }
 
 .navbar a:hover{
-    background-color: rgb(14, 114, 180);
+    background-color: rgb(201, 232, 253);
     font-weight: 700;
 }
-
-
 
 
 
