@@ -5,10 +5,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 body{
     display: grid;
     height: 150vh;
-    grid-template-rows: auto 1fr auto;/*DIVIDE TODO EL WEBSITE EN 3 SECCIONES, 
+    grid-template-rows: auto auto 1fr auto;/*DIVIDE TODO EL WEBSITE EN 3 SECCIONES, 
     CON EL HEIGHT 15 NOS ASEGURAMOS DEL CRECIMENTO DE LA WEBPAGE, ASEGURADO SCROLL VERTICAL
     SI EFECTAR DISE;O RESPONSIVE.*/
 }
@@ -24,15 +25,14 @@ main{
     background-color: rgb(242, 248, 248);
 }
 
-footer{
+footer{ 
     display: grid;
-    grid-template-columns: repeat(1fr,1fr,1fr);
-    
-    background-color: #242440
+    justify-content: center;
+    background-color: #200d3f
 }
 
 .logo img{
-    height: 60px;   
+    height: 100px;   
 }
 
 
@@ -40,7 +40,6 @@ footer{
     
     display: flex;
     flex-flow: row wrap; /*PARA DISE;O RESPONSIVE SE AJUSTA PARA NO TENER QUE ACTIVAR EL SCROLL BAR*/
-
 }
 
 nav li{
@@ -66,7 +65,6 @@ nav li{
 }
 
 
-
 .flex-container{
     display: flex; /*LINEA DE CODIGO CONVIERTE AL DIV EN UN FLEX CONTAINER*/
     /*FLEX-DIRECTION POR DEFECTO ES ROW*/
@@ -75,4 +73,56 @@ nav li{
     margin-right: 1rem;
     margin-left: 1rem;
     
+}
+
+.navbarprograms{
+   
+    background-color: #BA0520;
+}
+
+#programsnav a{
+    color: white;
+}
+
+#programsnav a:hover{
+    background-color: #f3576f;
+}
+
+.container-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto  1fr auto ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+    text-align: center;
+    padding: 20px;
+}
+
+.logofooter img{
+    height: 75px;
+    filter: brightness(0) invert(1); /*hace imagen en blanco*/
+}
+
+h3 {
+   font-size: 22px; 
+}
+
+.letterColor{
+    color: white;
+    margin: 1rem;
+    font-size: 13px;
+}
+
+.espacio{
+    margin: 2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.enlace{
+    text-decoration: none;
 }
