@@ -27,7 +27,9 @@ main{
 
 footer{ 
     display: grid;
-    justify-content: center;
+    justify-content:center;
+    flex-flow: row wrap;
+
     background-color: #200d3f
 }
 
@@ -91,7 +93,7 @@ nav li{
 .container-grid{
     display: grid;
     justify-content: center;
-    grid-template-rows: auto  1fr auto ;
+    grid-template-rows: auto  auto 1fr ;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -101,7 +103,7 @@ nav li{
 }
 
 .logofooter img{
-    height: 75px;
+    height: 60px;
     filter: brightness(0) invert(1); /*hace imagen en blanco*/
 }
 
@@ -125,4 +127,11 @@ h3 {
 
 .enlace{
     text-decoration: none;
+}
+
+h3 ~ p {
+    color: white;
+    margin: 1rem;
+    font-size: 13px; 
+    line-height: 1.5rem;
 }
